@@ -1,3 +1,9 @@
+import { redirect } from "next/navigation";
+
+export default function SignupPage() {
+  redirect("/login");
+}
+
 // // app/admin/signup/page.tsx
 // "use client";
 
