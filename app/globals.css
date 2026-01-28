@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors - Updated to match wedding invitation */
+  --color-primary: #6d1e3e; /* Regal Wine/Burgundy */
+  --color-primary-foreground: #faf5f0;
+  --color-secondary: #d4a5a5; /* Dusty Pink */
+  --color-accent: #5d3a29; /* Chocolate Brown */
+  --color-background: #faf5f0; /* Cream/Beige background */
+  --color-foreground: #2d1810;
+  --color-muted: #f0ebe5;
+  --color-muted-foreground: #6b5d55;
+  --color-border: #e8ddd5;
+  --color-input: #e8ddd5;
+  --color-ring: #6d1e3e;
+
+  /* Additional accent colors from the card - Define as direct colors */
+  --color-regal-wine: #6d1e3e;
+  --color-regalWine: #6d1e3e;
+  --color-dusty-pink: #d4a5a5;
+  --color-dustyPink: #d4a5a5;
+  --color-chocolate-brown: #5d3a29;
+  --color-chocolateBrown: #5d3a29;
+  --color-cream: #faf5f0;
+  --color-rose-dark: #8b3a4f;
+  --color-roseDark: #8b3a4f;
+  --color-rose-light: #e8c5c5;
+  --color-roseLight: #e8c5c5;
+
+  /* Fonts */
+  --font-family-sans:
+    var(--font-montserrat), system-ui, -apple-system, sans-serif;
+  --font-family-serif: var(--font-playfair), Georgia, serif;
+  --font-family-cormorant: var(--font-cormorant), Georgia, serif;
+  --font-family-great-vibes: var(--font-great-vibes), cursive;
+
+  /* Border Radius */
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+
+  .font-great-vibes {
+    font-family: var(--font-family-great-vibes);
+  }
+
+  .font-cormorant {
+    font-family: var(--font-family-cormorant);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Color utility classes */
+  .text-regalWine {
+    color: #6d1e3e;
+  }
+
+  .text-dustyPink {
+    color: #d4a5a5;
+  }
+
+  .text-chocolateBrown {
+    color: #5d3a29;
+  }
+
+  .text-cream {
+    color: #faf5f0;
+  }
+
+  .text-roseDark {
+    color: #8b3a4f;
+  }
+
+  .text-roseLight {
+    color: #e8c5c5;
+  }
+
+  .bg-regalWine {
+    background-color: #6d1e3e;
+  }
+
+  .bg-dustyPink {
+    background-color: #d4a5a5;
+  }
+
+  .bg-chocolateBrown {
+    background-color: #5d3a29;
+  }
+
+  .bg-cream {
+    background-color: #faf5f0;
+  }
+
+  .bg-roseDark {
+    background-color: #8b3a4f;
+  }
+
+  .bg-roseLight {
+    background-color: #e8c5c5;
+  }
+
+  .border-regalWine {
+    border-color: #6d1e3e;
+  }
+
+  .border-dustyPink {
+    border-color: #d4a5a5;
+  }
+
+  .border-chocolateBrown {
+    border-color: #5d3a29;
+  }
+
+  .border-roseLight {
+    border-color: #e8c5c5;
+  }
+
+  /* Gradient utilities matching the card's aesthetic */
+  .bg-gradient-wedding {
+    background: linear-gradient(135deg, #6d1e3e 0%, #8b3a4f 50%, #d4a5a5 100%);
+  }
+
+  .bg-gradient-rose {
+    background: linear-gradient(to bottom, #e8c5c5, #d4a5a5);
+  }
+
+  .from-regalWine {
+    --tw-gradient-from: #6d1e3e;
+    --tw-gradient-stops:
+      var(--tw-gradient-from), var(--tw-gradient-to, rgba(109, 30, 62, 0));
+  }
+
+  .to-dustyPink {
+    --tw-gradient-to: #d4a5a5;
+  }
+
+  .from-roseDark {
+    --tw-gradient-from: #8b3a4f;
+    --tw-gradient-stops:
+      var(--tw-gradient-from), var(--tw-gradient-to, rgba(139, 58, 79, 0));
+  }
+
+  .to-roseLight {
+    --tw-gradient-to: #e8c5c5;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(5deg);
+    }
+  }
+
+  @keyframes pulse-soft {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-soft {
+    animation: pulse-soft 2s ease-in-out infinite;
+  }
+}
