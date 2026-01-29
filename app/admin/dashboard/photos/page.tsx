@@ -192,7 +192,7 @@ export default function AdminPhotosPage() {
   }
 
   return (
-    <div className="min-h-screen p-4 md:p-8 bg-gradient-to-b from-cream via-roseLight/20 to-white">
+    <div className="min-h-screen p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
           <div className="flex items-center gap-4">
