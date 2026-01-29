@@ -61,8 +61,8 @@ export const metadata: Metadata = {
     description: "Join us as we celebrate our special day - March 1st, 2026",
   },
   icons: {
-    icon: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "/favicon-32x32.png",
+    apple: "/favicon-32x32.png",
   },
 };
 
