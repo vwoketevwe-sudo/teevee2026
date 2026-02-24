@@ -156,7 +156,7 @@ export function RSVPSection() {
                 <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/20">
                   <Calendar className="w-8 h-8 text-dustyPink mx-auto mb-2" />
                   <p className="text-white font-medium">March 07, 2026</p>
-                  <p className="text-white/70 text-sm">Friday</p>
+                  <p className="text-white/70 text-sm">Saturday</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/20">
                   <Clock className="w-8 h-8 text-dustyPink mx-auto mb-2" />
