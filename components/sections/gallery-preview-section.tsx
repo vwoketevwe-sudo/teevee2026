@@ -11,7 +11,12 @@ import { ArrowRight, Heart } from "lucide-react";
 export function GalleryPreviewSection() {
   const ref = useScrollAnimation<HTMLElement>();
 
-  const previewImages = ["/assets/images/teevee.jpeg"];
+  const previewImages = [
+    "/assets/images/teevee.jpeg",
+    "/assets/images/photo1.jpeg",
+    "/assets/images/photo2.jpeg",
+    "/assets/images/photo3.jpeg",
+  ];
 
   return (
     <section
